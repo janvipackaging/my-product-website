@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next'
 
-export default function sitemap() {
+export default function sitemap(): MetadataRoute.Sitemap {
   // A comprehensive list of major cities across all Indian states and union territories.
-  // The names are lowercase and URL-friendly (e.g., 'new-delhi').
   const CITIES = [
     // Andaman and Nicobar Islands
     'port-blair',
@@ -79,18 +78,17 @@ export default function sitemap() {
   ];
 
   const cityUrls = CITIES.map((city) => ({
-
-    url: `https://www.janvipackaging.online/bopp-film/${city}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.8,
-  }));
+    url: `https://www.janvipackaging.online/bopp-film/${city}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
 
   return [
     {
       url: 'https://www.janvipackaging.online', // Your homepage
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: 'yearly' as const,
       priority: 1,
     },
     ...cityUrls,
