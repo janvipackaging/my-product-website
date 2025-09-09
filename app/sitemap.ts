@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   // A comprehensive list of major cities across all Indian states and union territories.
   // The names are lowercase and URL-friendly (e.g., 'new-delhi').
   const CITIES = [
