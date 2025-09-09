@@ -81,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityUrls = CITIES.map((city) => ({
     url: `https://www.janvipackaging.online/bopp-film/${city}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as 'monthly',
+    changeFrequency: 'monthly',
     priority: 0.8,
   }));
 
