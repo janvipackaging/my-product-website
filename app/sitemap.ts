@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const cityUrls = CITIES.map((city) => ({
-    url: `http://cities.janvipackaging.onlinebopp-film/${city}`,
+    url: `https://cities.janvipackaging.online/bopp-film/${city}`, // <-- Corrected this line
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
