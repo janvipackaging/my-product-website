@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const cityUrls = CITIES.map((city) => ({
-    url: `https://www.janvipackaging.online/bopp-film/${city}`,
+    url: `http://cities.janvipackaging.onlinebopp-film/${city}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://www.janvipackaging.online', // Your homepage
+      url: 'https://cities.janvipackaging.online', // Your homepage
       lastModified: new Date(),
       changeFrequency: 'yearly' as const,
       priority: 1,
